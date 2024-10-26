@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>TODO APP</title>
+    </head>
+    <body>
+        <div class="app" id="app">
+            <section class="top" id="appTop">
+                <h1>ToDo List</h1>
+                <button class="btn" id="addTaskBox-btn">Add task</button>
+                <span class="alert-message" id="alert-message"></span>
+            </section>
+            <section class="add-task" id="addTask-box" style="display: none">
+                <div class="item align-center">
+                    <h2>Add task</h2>
+                    <input
+                        type="text"
+                        name=""
+                        id="input-task-title"
+                        placeholder="Title*"
+                    />
+                    <textarea
+                        name="coiso"
+                        id="input-task-detail"
+                        placeholder="Details"
+                    ></textarea>
+                    <select
+                        name="select-task-importance"
+                        id="select-task-importance"
+                        class="importance"
+                    >
+                        <option value="veryImportant">Very important</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="notImportant">Not important</option>
+                    </select>
+                    <button class="btn w100" id="btn-add-task">Add</button>
+                </div>
+            </section>
+            <section class="list" id="task-list"></section>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
